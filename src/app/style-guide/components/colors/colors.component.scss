@@ -1,0 +1,37 @@
+@use "src/general-styles/variables" as *;
+
+.primaries {
+  display: flex;
+  margin-bottom: 40px;
+
+  .primary-color-box {
+    .preview-color {
+      width: 120px;
+      height: 120px;
+    }
+  }
+}
+
+.grays {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+
+  .grays-color-box {
+    .preview-color {
+      width: 120px;
+      height: 60px;
+    }
+  }
+}
+
+.color-name,
+.color-value {
+  text-transform: uppercase;
+  color: $grey-3;
+  display: block;
+}
+
+.preview-color-info {
+  margin: 8px 0;
+}

@@ -1,0 +1,36 @@
+@use "src/general-styles/variables" as *;
+
+.tab {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: $normal-text;
+  color: $black;
+  border-bottom: 5px solid transparent;
+  padding-bottom: 12px;
+  min-width: 60px;
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+
+  &:not(:last-child) {
+    margin-right: 32px;
+  }
+
+  &.active {
+    border-bottom-color: $primary;
+  }
+
+  &:hover {
+    border-bottom-color: $primary-hover;
+  }
+
+  &.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+}
+
+.tabs,
+.tabs-group {
+  padding: 32px 12px;
+}

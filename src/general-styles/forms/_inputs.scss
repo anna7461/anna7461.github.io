@@ -1,0 +1,87 @@
+@use "src/general-styles/variables" as *;
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 15px;
+
+  &.checkbox-form-group,
+  &.radiobtn-form-group {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .form-label {
+    color: $grey-3;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 4px;
+  }
+
+  .checkbox-label,
+  .radiobtn-label {
+    margin-left: 12px;
+  }
+
+  .form-icon {
+    font-size: 18px;
+    position: absolute;
+    right: 25px;
+    top: 40px;
+  }
+
+  .form-control {
+    border: 1px solid $grey-2;
+    height: 56px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding: 14px 12px;
+    outline: none;
+    color: $grey-4;
+    font-size: 18px;
+    width: 100%;
+
+    &[type=checkbox],
+    &[type=radio] {
+      height: 28px;
+      width: 28px;
+
+      &:checked {
+        background-color: $primary;
+      }
+    }
+
+    &::placeholder {
+      color: $grey-2;
+      font-size: 18px;
+      line-height: 22px;
+    }
+
+    &:focus,
+    &.focus {
+      border-color: $primary;
+    }
+
+    &.success ~ .form-icon {
+      color: $success;
+    }
+
+    &.error {
+      border-color: $error;
+
+      & ~ .form-icon {
+        color: $error;
+      }
+    }
+
+    &:disabled,
+    &.disabled,
+    & ~ .form-icon {
+      opacity: 0.5;
+      pointer-events: none;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.temp-grey-box {
+  //background-color: #f5f3f4;
+  //border: 1px solid #cccccc;
+  display: block;
+  padding: 16px;
+  margin: 3px;
+  overflow: hidden;
+}
+
+.temp-white-box {
+  //background-color: #ffffff;
+  //border: 1px solid #cccccc;
+  display: block;
+  padding: 16px;
+  margin: 3px;
+  overflow: hidden;
+}
+
+.style-guide-section {
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr;
+  grid-column-gap: 32px;
+}
+
+.section-column-left {
+  .heading-2 {
+    margin: 0;
+  }
+
+  .normal-text {
+    margin: 4px 0 24px;
+  }
+}

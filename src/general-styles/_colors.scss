@@ -1,0 +1,33 @@
+@use "variables/color-variables" as *;
+
+.primary-bg {
+  background-color: $primary;
+}
+
+.primary-highlight-bg {
+  background-color: $primary-highlight;
+}
+
+.secondary-bg {
+  background-color: $secondary;
+}
+
+.grey-1-bg {
+  background-color: $grey-1;
+}
+
+.grey-2-bg {
+  background-color: $grey-2;
+}
+
+.grey-3-bg {
+  background-color: $grey-3;
+}
+
+.grey-4-bg {
+  background-color: $grey-4;
+}
+
+.black-bg {
+  background-color: $black;
+}

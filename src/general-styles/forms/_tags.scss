@@ -1,0 +1,42 @@
+@use "src/general-styles/variables" as *;
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: $grey-3;
+  margin: 8px;
+  padding: 6px 22px;
+  border-radius: 80px;
+  color: white;
+  border: 1px solid $grey-3;
+  box-shadow: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+
+  &.primary {
+    background: $primary-highlight;
+    border-color: $primary-highlight;
+  }
+
+  &.secondary {
+    background: $secondary;
+    border-color: $secondary;
+  }
+
+  &.tertiary {
+    background: $black;
+    border-color: $black;
+  }
+
+  &.icon {
+    background: #ffffff;
+    border-color: $primary;
+    color: $primary;
+
+    i {
+      margin-right: 5px;
+    }
+  }
+}

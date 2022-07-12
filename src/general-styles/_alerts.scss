@@ -1,0 +1,66 @@
+@use "variables" as *;
+
+.alert-error,
+.alert-success,
+.alert-warning {
+  > p {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.alert-icon {
+  margin-right: 12px;
+  display: flex;
+}
+
+.close-icon {
+  display: flex;
+  color: $black;
+  font-size: $medium-text;
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+
+  &:hover {
+    color: $grey-4;
+  }
+}
+
+.alert-error {
+  background-color: rgba($error, 10%);
+  color: $error;
+  font-size: $normal-text;
+  font-weight: $font-weight-normal;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 8px;
+  border-radius: 8px;
+  padding: 0 24px;
+}
+
+.alert-success {
+  background-color: rgba($success, 10%);
+  color: $success;
+  font-size: $normal-text;
+  font-weight: $font-weight-normal;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 8px;
+  border-radius: 8px;
+  padding: 0 24px;
+}
+
+.alert-warning {
+  background-color: rgba($warning, 10%);
+  color: $warning;
+  font-size: $normal-text;
+  font-weight: $font-weight-normal;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 8px;
+  border-radius: 8px;
+  padding: 0 24px;
+}

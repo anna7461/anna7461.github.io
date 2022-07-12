@@ -1,0 +1,99 @@
+@use "variables" as *;
+
+.heading-1 {
+  font-size: $heading-1;
+  font-weight: $font-weight-bold;
+  color: $black;
+  margin: 10px 0;
+}
+
+.heading-2 {
+  font-size: $heading-2;
+  font-weight: $font-weight-bold;
+  color: $black;
+  margin: 10px 0;
+}
+
+.heading-3 {
+  font-size: $heading-3;
+  font-weight: $font-weight-medium;
+  color: $black;
+  margin: 10px 0;
+}
+
+.heading-4 {
+  font-size: $heading-4;
+  font-weight: $font-weight-medium;
+  color: $black;
+  margin: 10px 0;
+}
+
+.heading-5 {
+  font-size: $heading-5;
+  font-weight: $font-weight-medium;
+  color: $black;
+  margin: 10px 0;
+}
+
+.heading-6 {
+  font-size: $heading-6;
+  font-weight: $font-weight-medium;
+  color: $black;
+  margin: 10px 0;
+}
+
+.large-text {
+  font-size: $large-text;
+  color: $black;
+  margin: 10px 0;
+}
+
+.medium-text {
+  font-size: $medium-text;
+  color: $black;
+  margin: 10px 0;
+}
+
+.normal-text {
+  font-size: $normal-text;
+  color: $black;
+  margin: 10px 0;
+}
+
+.small-text {
+  font-size: $small-text;
+  color: $black;
+  margin: 10px 0;
+}
+
+.primary-text {
+  color: $primary;
+}
+
+.primary-highlight-text {
+  color: $primary-highlight;
+}
+
+.secondary-text {
+  color: $secondary;
+}
+
+.grey-1-text {
+  color: $grey-1;
+}
+
+.grey-2-text {
+  color: $grey-2;
+}
+
+.grey-3-text {
+  color: $grey-3;
+}
+
+.grey-4-text {
+  color: $grey-4;
+}
+
+.black-text {
+  color: $black;
+}

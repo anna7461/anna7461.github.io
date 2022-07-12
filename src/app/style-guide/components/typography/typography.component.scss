@@ -1,0 +1,10 @@
+@use "src/general-styles/variables" as *;
+
+.teg {
+  color: $grey-3;
+  font-size: $medium-text;
+  font-weight: $font-weight-normal;
+  margin-right: 24px;
+  width: 120px;
+  display: inline-block;
+}
